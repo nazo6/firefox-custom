@@ -1,0 +1,6 @@
+{
+  "imports": {
+    "path/": "https://deno.land/std@0.161.0/path/",
+    "fs-extra": "npm:fs-extra@10"
+  }
+}

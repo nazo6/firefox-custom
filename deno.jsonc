@@ -1,0 +1,10 @@
+{
+  "importMap": "import_map.json",
+  "tasks": {
+    "setup": "deno run --unstable -A ./scripts/setup.ts && cd patched && ./mach bootstrap && cd ..",
+    "apply": "deno run --unstable -A ./scripts/apply.ts",
+    "build": "deno task apply && cd patched && ./mach build && cd ..",
+    "run": "deno task build && cd patched && ./mach run && cd ..",
+    "start": "cd patched && ./mach run && cd .."
+  }
+}
